@@ -11,7 +11,6 @@ const sendflag = [
     value: 1
   }
 ]
-
 const servicetype = [
   {
     label: '注册服务',
@@ -31,5 +30,6 @@ const bureauId = [
     value: 3
   }
 ]
+const dataBaseType = ['DATE', 'STRING', 'TEXT', 'INTEGER', 'CHAR']
 
-export { sendflag, servicetype, bureauId }
+export { sendflag, servicetype, bureauId, dataBaseType }
