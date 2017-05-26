@@ -5,7 +5,8 @@ import main from './main.vue'
 import login from './page/login.vue'
 import welcome from './page/welcome.vue'
 import model from './page/model/index.vue'
-import addModel from './page/model/add.vue'
+import addArticle from './page/article/add.vue'
+import article from './page/article/index.vue'
 import NotFound from './404.vue'
 let routes = [
   {
@@ -24,7 +25,8 @@ let routes = [
     children: [
       {path: 'welcome', component: welcome, name: 'welcome'},
       {path: 'model', component: model, name: 'model'},
-      {path: 'addmodel', component: addModel, name: 'addModel'}
+      {path: 'addarticle', component: addArticle, name: 'addArticle'},
+      {path: 'article', component: article, name: 'article'}
 
     ]
   },

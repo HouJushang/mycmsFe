@@ -30,6 +30,6 @@ const bureauId = [
     value: 3
   }
 ]
-const dataBaseType = ['DATE', 'STRING', 'TEXT', 'INTEGER', 'CHAR']
+const dataBaseType = ['DATE', 'STRING', 'TEXT', 'INTEGER', 'CHAR', 'JSON', 'ARRAY']
 
 export { sendflag, servicetype, bureauId, dataBaseType }

@@ -7,13 +7,12 @@ export default {
       name: '常用操作',
       children: [
         {
-          name: '欢迎页面'
+          name: '文章列表',
+          path: 'article'
         },
         {
-          name: '文章列表'
-        },
-        {
-          name: '添加文章'
+          name: '添加文章',
+          path: 'addArticle'
         }
       ]
     },

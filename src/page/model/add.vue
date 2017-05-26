@@ -13,7 +13,7 @@
       <el-form-item label="添加字段" v-for="item in form.config">
         <el-input placeholder="名称" v-model="item.name"></el-input>
         <el-select v-model="item.type" placeholder="字段类型">
-          <el-option v-for="item in dataBaseType" :label="item" value="item"></el-option>
+          <el-option v-for="item in dataBaseType" :label="item" :value="item"></el-option>
         </el-select>
       </el-form-item>
     </div>
@@ -48,7 +48,7 @@
           url: '/addmodel',
           data: this.form
         }).then(e => {
-          console.log(e)
+          this.$router.push({name: 'model'})
         })
       }
     }
