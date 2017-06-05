@@ -8,11 +8,7 @@
       </el-table-column>
       <el-table-column prop="keywords" label="关键词">
       </el-table-column>
-      <el-table-column prop="description" label="描述">
-      </el-table-column>
       <el-table-column prop="addtime" label="添加时间">
-      </el-table-column>
-      <el-table-column prop="updatetime" label="最后更新时间">
       </el-table-column>
     </el-table>
     <el-pagination
