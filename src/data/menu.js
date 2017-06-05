@@ -13,6 +13,10 @@ export default {
         {
           name: '添加文章',
           path: 'addArticle'
+        },
+        {
+          name: '采集列表',
+          path: 'spriderAtricle'
         }
       ]
     },
