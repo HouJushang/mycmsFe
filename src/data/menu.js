@@ -7,6 +7,10 @@ export default {
       name: '常用操作',
       children: [
         {
+          name: '类目',
+          path: 'category'
+        },
+        {
           name: '文章列表',
           path: 'article'
         },

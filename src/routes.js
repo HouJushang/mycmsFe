@@ -4,10 +4,11 @@
 import main from './main.vue'
 import login from './page/login.vue'
 import welcome from './page/welcome.vue'
-import model from './page/model/index.vue'
 import addArticle from './page/article/add.vue'
 import article from './page/article/index.vue'
 import spriderAtricle from './page/sprider/index.vue'
+import category from './page/category/index.vue'
+import addCategory from './page/category/add.vue'
 
 import NotFound from './404.vue'
 let routes = [
@@ -26,11 +27,11 @@ let routes = [
     component: main,
     children: [
       {path: 'welcome', component: welcome, name: 'welcome'},
-      {path: 'model', component: model, name: 'model'},
       {path: 'addarticle', component: addArticle, name: 'addArticle'},
       {path: 'article', component: article, name: 'article'},
+      {path: 'category', component: category, name: 'category'},
+      {path: 'addcategory', component: addCategory, name: 'addCategory'},
       {path: 'sprideratricle', component: spriderAtricle, name: 'spriderAtricle'}
-
     ]
   },
   {
