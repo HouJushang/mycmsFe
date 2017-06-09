@@ -1,7 +1,6 @@
 /**
 * Created by hou on 2017/6/7.
 */
-
 <template>
   <section>
     <el-row :gutter="20">
