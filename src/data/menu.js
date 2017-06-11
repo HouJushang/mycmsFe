@@ -15,6 +15,10 @@ export default {
           path: 'article'
         },
         {
+          name: '待审核',
+          path: 'noisure'
+        },
+        {
           name: '添加文章',
           path: 'addArticle'
         },

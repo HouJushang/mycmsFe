@@ -43,7 +43,7 @@
           url: '/article',
           data: {
             where: {
-              status: 1
+              status: 0
             },
             offset: (this.current - 1) * this.pageSize,
             limit: this.pageSize

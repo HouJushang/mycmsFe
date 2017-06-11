@@ -28,7 +28,7 @@
       </el-table-column>
       <el-table-column label="操作" width="100">
         <template scope="scope">
-          <el-button type="text" size="small" @click="">发布</el-button>
+          <el-button type="text" size="small" @click="isure(scope.row.id)">发布</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -83,13 +83,15 @@
           this.$refs.multipleTable.clearSelection()
         }
       },
-      isure () {
+      isure (e) {
+        alert(e)
         postRequest({
           url: '/issue',
-          data: this.dataSelection
-        }).then(e => {
-          this.listData = e.rows
-          this.count = e.count
+          data: {
+            id: e
+          }
+        }).then(f => {
+          alert('ok')
         })
       }
     },
