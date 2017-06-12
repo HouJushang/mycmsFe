@@ -8,11 +8,9 @@
       </el-table-column>
       <el-table-column prop="keywords" label="关键词">
       </el-table-column>
-      <el-table-column prop="description" label="描述">
+      <el-table-column prop="description" label="描述" show-overflow-tooltip>
       </el-table-column>
-      <el-table-column prop="addtime" label="添加时间">
-      </el-table-column>
-      <el-table-column prop="updatetime" label="最后更新时间">
+      <el-table-column prop="addtime" label="添加时间" :formatter="timeFormat">
       </el-table-column>
     </el-table>
     <el-pagination
@@ -28,6 +26,7 @@
 </template>
 <script>
   import {postRequest} from '../../util/request'
+  import dateFormat from '../../util/dateFormat'
   export default{
     data () {
       return {
@@ -60,6 +59,9 @@
       pageChange (e) {
         this.current = e
         this.getData()
+      },
+      timeFormat (e) {
+        return dateFormat(new Date(e.addtime), 'yyyy/MM/dd hh:mm')
       }
     },
     mounted () {

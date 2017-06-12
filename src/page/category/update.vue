@@ -3,7 +3,7 @@
 */
 <template>
   <section>
-    <category :addForm="addForm"></category>
+    <category :addForm="category"></category>
   </section>
 </template>
 <style>
@@ -14,17 +14,7 @@
   export default{
     data () {
       return {
-        category: [],
-        addForm: {
-          name: '',
-          articletype: '',
-          sortrank: 100,
-          folder: '',
-          bindhost: false,
-          showtype: '1',
-          domain: '',
-          parentid: 0
-        }
+        category: null
       }
     },
     methods: {
@@ -33,8 +23,12 @@
       category
     },
     mounted () {
+      let catId = this.$route.params.id
       postRequest({
-        url: '/category'
+        url: `/categorydetail`,
+        data: {
+          id: catId
+        }
       }).then(e => {
         this.category = e
       }).catch(e => {

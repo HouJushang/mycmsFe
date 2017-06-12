@@ -9,6 +9,8 @@ import article from './page/article/index.vue'
 import noIsure from './page/article/noIsure.vue'
 import spriderAtricle from './page/sprider/index.vue'
 import category from './page/category/index.vue'
+import updateCategory from './page/category/update.vue'
+import updateHtml from './page/update/index.vue'
 import addCategory from './page/category/add.vue'
 
 import NotFound from './404.vue'
@@ -33,6 +35,8 @@ let routes = [
       {path: 'noisure', component: noIsure, name: 'noisure'},
       {path: 'category', component: category, name: 'category'},
       {path: 'addcategory', component: addCategory, name: 'addCategory'},
+      {path: 'updatecategory/:id', component: updateCategory, name: 'updateCategory'},
+      {path: 'updatehtml', component: updateHtml, name: 'updateHtml'},
       {path: 'sprideratricle', component: spriderAtricle, name: 'spriderAtricle'}
     ]
   },

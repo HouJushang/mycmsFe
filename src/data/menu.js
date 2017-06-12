@@ -25,6 +25,10 @@ export default {
         {
           name: '采集列表',
           path: 'spriderAtricle'
+        },
+        {
+          name: '更新html',
+          path: 'updateHtml'
         }
       ]
     },
